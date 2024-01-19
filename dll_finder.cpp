@@ -22,7 +22,7 @@ void FindDllFiles(const std::string& directory, std::vector<std::string>& dllFil
 			size_t len = strlen(findFileData.cFileName);
 			if (len >= 4 && stricmp(findFileData.cFileName + len - 4, ".dll") == 0) {
 				dllFiles.push_back(directory + "\\" + findFileData.cFileName);
-				printf("\rFound %d DLLs", dllFiles.size());
+				printf("\rFound %lld DLLs", (long long)dllFiles.size());
 			}
 		}
 	} while (FindNextFileA(hFind, &findFileData) != 0);
