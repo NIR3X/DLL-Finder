@@ -62,5 +62,7 @@ int main() {
 	WriteDllListToFile(dllFiles, "dlls.txt");
 	std::cout << std::endl << "Found DLLs written to dlls.txt" << std::endl;
 	std::cout << "Press enter to exit..." << std::endl;
-	std::cin.get();
+	while (GetForegroundWindow() != GetConsoleWindow() || !(GetAsyncKeyState(VK_RETURN) & 0x8000)) {
+		Sleep(1);
+	}
 }
