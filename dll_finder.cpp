@@ -61,4 +61,5 @@ int main() {
 	FindDllFilesOnAllDrives(dllFiles);
 	WriteDllListToFile(dllFiles, "dlls.txt");
 	std::cout << std::endl << "Found DLLs written to dlls.txt" << std::endl;
+	system("pause");
 }
