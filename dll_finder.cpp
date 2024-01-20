@@ -61,7 +61,7 @@ int main() {
 	FindDllFilesOnAllDrives(dllFiles);
 	WriteDllListToFile(dllFiles, "dlls.txt");
 	std::cout << std::endl << "Found DLLs written to dlls.txt" << std::endl;
-	std::cout << "Press CTRL+C to exit" << std::endl;
+	std::cout << "Press Ctrl+C to exit" << std::endl;
 	for (;;) {
 		Sleep(10);
 	}
