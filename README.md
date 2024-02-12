@@ -18,7 +18,7 @@ DLL Finder is a simple C++ program that recursively searches for DLL files on al
 ## Usage Example
 
 ```bash
-dll_finder.exe
+DllFinder.exe
 ```
 
 ## Dependencies
@@ -30,7 +30,7 @@ dll_finder.exe
 Compile the program using a C++ compiler. For example:
 
 ```bash
-g++ -std=c++2a -Wall -O2 -march=x86-64 -fno-rtti dll_finder.cpp -o dll_finder.exe -s -static
+g++ -std=c++2a -Wall -O2 -march=x86-64 -fno-rtti DllFinder.cpp -o DllFinder.exe -s -static
 ```
 
 ## License
